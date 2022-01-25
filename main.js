@@ -49,12 +49,12 @@ window.onload = () => {
 
   function scrollFunction() {
     if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
+      document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 100
     ) {
-      scrollToTopButton.style.bottom = "20px";
+      scrollToTopButton.style.top = "0px";
     } else {
-      scrollToTopButton.style.bottom = "-200px";
+      scrollToTopButton.style.top = "-200px";
     }
   }
 
