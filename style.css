@@ -37,6 +37,7 @@ h3 {
     border: none;
     text-align: left;
     outline: none;
+    border-bottom: 1px solid #999;
 }
 
 section {
@@ -52,6 +53,16 @@ section>div {
 
 section img {
     width: 100%;
+}
+
+#lang {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#lang img {
+    width: 50px;
 }
 
 /* #region Collapsible: https://www.w3schools.com/howto/howto_js_collapsible.asp */

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn sử dụng Vn Byte Café</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <img class="logo" src="./images/logo.png" alt="Logo vnbytecafe" />
+    <h2>Vn Byte Café<br />Hướng dẫn sử dụng</h2>
+
+    <a id="lang" href="./index.html">
+        <img id="flag" src="./images/usflag.png" alt="english">
+    </a>
+
+    <div class="menu">
+        <a href="#logon">Đăng nhập</a>
+        <a href="#account">Ví & Nạp tiền</a>
+        <a href="#order">Mua hàng</a>
+        <a href="#service-request">Gửi yêu cầu</a>
+        <a href="#status">Trạng thái đơn hàng/đơn yêu cầu</a>
+        <a href="#others">Khác</a>
+    </div>
+
+    <section>
+
+        <div id="logon">
+            <h3>Đăng nhập</h3>
+            <p>Đăng nhập bằng tài khoản Intel hoặc quét mã QR Code tại máy kiosk</p>
+            <img src="./images/vi/logon1.png" alt="logon" />
+        </div>
+
+        <div id="account">
+            <h3>Ví</h3>
+            <img src="./images/vi/account1.png" alt="account" />
+
+            <h3>Nạp tiền vào ví</h3>
+            <p>• Buớc 1: Nhập số tiền</p>
+            <img src="./images/vi/topup1.png" alt="topup step 1" />
+            <p>• Bước 2: Thanh toán</p>
+            <img src="./images/vi/topup2.png" alt="top up step 2" />
+        </div>
+
+        <div id="order">
+            <h3>Mua hàng</h3>
+
+            <p>• Bước 1: Thêm vào giỏ hàng</p>
+            <img src="./images/vi/addtocart1.png" alt="add to cart 1" />
+            <img src="./images/vi/addtocart2.png" alt="add to cart 2" />
+
+            <p>• Bước 2: Xác nhận đơn hàng</p>
+            <img src="./images/vi/confirmorder1.png" alt="confirm order 1" />
+
+            <p>• Bước 3: Thanh toán</p>
+            <img src="./images/vi/payment1.png" alt="payment 1" />
+            <img src="./images/vi/payment2.png" alt="payment 2" />
+        </div>
+
+        <div id="service-request">
+            <h3>Gửi yêu cầu</h3>
+            <img src="./images/vi/servicerequest1.png" alt="service-request 1" />
+        </div>
+
+        <div id="status">
+            <h3>Trạng thái đơn hàng/đơn yêu cầu</h3>
+            <p>Lịch sử mua hàng/gửi yêu cầu</p>
+            <img src="./images/vi/history1.png" alt="history 1" />
+            <p>Chi tiết đơn hàng/đơn yêu cầu</p>
+            <img src="./images/vi/status1.png" alt="status 1" />
+        </div>
+
+        <div id="others">
+            <h3>Khác</h3>
+            <p>Coming soon.</p>
+        </div>
+    </section>
+
+    <!-- Go to top -->
+    <button id="myBtn" title="Back">Quay lại</button>
+
+
+    <!-- The Modal Image -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+</body>
+
+</html>

@@ -22,14 +22,15 @@ window.onload = () => {
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
 
-  Array.from(imgs).forEach(
-    (img) =>
-      (img.onclick = function () {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-      })
-  );
+  Array.from(imgs).forEach((img) => {
+    if (img.id === "flag") return;
+
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    };
+  });
 
   var span = document.getElementsByClassName("close")[0];
 
